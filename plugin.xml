@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="community-cordova-plugin-files-picker"
+        version="1.0.0">
+    <name>Cordova Plugin Picker Files</name>
+    <description></description>
+    <license>MIT</license>
+    <keywords></keywords>
+    <repo>https://github.com/eyalin/community-cordova-plugin-files-picker.git</repo>
+    <issue>https://github.com/eyalin/community-cordova-plugin-files-picker/issues</issue>
+
+    <!-- android -->
+    <platform name="android">
+        <js-module src="www/plugin.js" name="FilesPickerPlugin">
+            <runs/>
+
+            <!-- This is the window variable name you want, like window.FilesPickerPlugin -->
+            <clobbers target="FilesPickerPlugin" />
+        </js-module>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="FilesPickerPlugin">
+                <param name="android-package" value="filespickerplugin.FilesPickerPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/FilesPickerPlugin.java" target-dir="src/android" />
+        <source-file src="src/android/ErrorCodes.java" target-dir="src/android" />
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <js-module src="www/plugin.js" name="plugin">
+            <runs/>
+            <clobbers target="FilesPickerPlugin" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="FilesPickerPlugin">
+                <param name="ios-package" value="FilesPickerPlugin" onload="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/FilesPickerPlugin.h" />
+        <source-file src="src/ios/FilesPickerPlugin.m" />
+    </platform>
+</plugin>
