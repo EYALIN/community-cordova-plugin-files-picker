@@ -36,29 +36,38 @@ public class FilesPickerPlugin extends CordovaPlugin {
         return false;
     }
 
-    private boolean validateOptions(JSONObject options) {
-        String type = options.optString("type", "all");
-        String input = options.optString("input", "absolutePath");
+private boolean validateOptions(JSONObject options) {
+    String type = options.optString("type", "all");
+    String input = options.optString("input", "absolutePath");
+    boolean multiple = options.optBoolean("multiple", true); // Check if the option exists
 
-        boolean validType = type.equals("all") || type.equals("image") || type.equals("video");
-        boolean validInput = input.equals("base64") || input.equals("absolutePath");
+    boolean validType = type.equals("all") || type.equals("image") || type.equals("video");
+    boolean validInput = input.equals("base64") || input.equals("absolutePath");
+    boolean validMultiple = (multiple == true || multiple == false); // Ensure multiple is a boolean
 
-        return validType && validInput;
-    }
+    return validType && validInput && validMultiple;
+}
 
-    private void pickFiles(JSONObject options) {
-        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-        String type = options.optString("type", "all");
-        if (type.equals("all")) {
-            intent.setType("*/*");
-        } else if (type.equals("image")) {
-            intent.setType("image/*");
-        } else if (type.equals("video")) {
-            intent.setType("video/*");
-        }
-        intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
-        cordova.startActivityForResult(this, intent, PICK_FILES);
-    }
+
+   private void pickFiles(JSONObject options) {
+       Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+       String type = options.optString("type", "all");
+
+       if (type.equals("all")) {
+           intent.setType("*/*");
+       } else if (type.equals("image")) {
+           intent.setType("image/*");
+       } else if (type.equals("video")) {
+           intent.setType("video/*");
+       }
+
+       // Check if the multiple option is set to true or false
+       boolean allowMultiple = options.optBoolean("multiple", true);
+       intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, allowMultiple);
+
+       cordova.startActivityForResult(this, intent, PICK_FILES);
+   }
+
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

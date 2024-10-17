@@ -1,11 +1,11 @@
 export type FileType = 'image' | 'video' | 'all';
-
 export type InputType = 'base64' | 'absolutePath';
 
 export interface IFilesPickerOptions {
     type?: FileType; // Type of files to pick
     input?: InputType; // Desired input format
     quality?: number; // Quality for image compression (0-100)
+    multiple?: boolean; // Option to allow multiple file selection (default: true)
 }
 
 export interface IPickerFile {

@@ -12,8 +12,14 @@
         return;
     }
 
+    // Set up PHPickerConfiguration with multiple option
     PHPickerConfiguration *configuration = [[PHPickerConfiguration alloc] init];
-    configuration.selectionLimit = 0; // 0 means no limit, allowing multiple selection
+
+    // Read the 'multiple' option (default is YES, meaning multiple selection allowed)
+    BOOL allowMultiple = options[@"multiple"] != nil ? [options[@"multiple"] boolValue] : YES;
+
+    // Set selection limit based on 'multiple' option
+    configuration.selectionLimit = allowMultiple ? 0 : 1; // 0 allows multiple selection, 1 restricts to single file
 
     NSString *type = options[@"type"];
     if ([type isEqualToString:@"image"]) {

@@ -1,6 +1,6 @@
 {
   "name": "community-cordova-plugin-files-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "types": "./types/index.d.ts",
   "readme": "README.md",
   "repository": "EYALIN/community-cordova-plugin-files-picker/tree/master",

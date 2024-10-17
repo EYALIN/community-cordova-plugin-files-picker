@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="539bce56-3bf3-47cf-8a0f-d90a69587aef" name="Changes" comment="initialized">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/FilesPickerPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/android/FilesPickerPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/FilesPickerPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/FilesPickerPlugin.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/index.d.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2V3ZaliYatxN0RLtXaYxmstyjMt" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/Development/Git/forked/community-cordova-plugin-files-picker&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="539bce56-3bf3-47cf-8a0f-d90a69587aef" name="Changes" comment="" />
+      <created>1694066789903</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694066789903</updated>
+      <workItem from="1694066791012" duration="1006000" />
+      <workItem from="1694676584972" duration="1015000" />
+      <workItem from="1704640746192" duration="2546000" />
+      <workItem from="1704647425977" duration="1778000" />
+      <workItem from="1704679186380" duration="1739000" />
+      <workItem from="1722054787006" duration="2238000" />
+      <workItem from="1722060917511" duration="631000" />
+      <workItem from="1722062110128" duration="12063000" />
+      <workItem from="1725518504695" duration="732000" />
+      <workItem from="1725611625936" duration="108000" />
+      <workItem from="1729152370552" duration="841000" />
+    </task>
+    <task id="LOCAL-00001" summary="update IOS">
+      <option name="closed" value="true" />
+      <created>1704643080553</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704643080553</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update IOS">
+      <option name="closed" value="true" />
+      <created>1704647450352</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704647450352</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update IOS">
+      <option name="closed" value="true" />
+      <created>1704647487404</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704647487404</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update IOS">
+      <option name="closed" value="true" />
+      <created>1722080112134</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722080112134</updated>
+    </task>
+    <task id="LOCAL-00005" summary="initialized">
+      <option name="closed" value="true" />
+      <created>1722080951190</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722080951190</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update IOS" />
+    <MESSAGE value="initialized" />
+    <option name="LAST_COMMIT_MESSAGE" value="initialized" />
+  </component>
+</project>
